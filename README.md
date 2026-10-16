@@ -1,4 +1,6 @@
-# KnowinRouter project page
+# EKT-Router: Expert–Evidence Alignment for Embodied Vision–Language Models
+
+Project homepage source; the IO page uses the KnowinRouter brand.
 
 Independent static project homepage: https://knowin-29.github.io/KnowinRouter.github.io/
 
