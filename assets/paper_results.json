@@ -1,0 +1,287 @@
+{
+  "provenance": "Paper-reported values transcribed from the supplied manuscript. No experimental reproduction in this release.",
+  "general": {
+    "source": "sections/04_evaluation.tex, Table 1",
+    "benchmarks": [
+      "MMBench v1.1",
+      "MMStar",
+      "MMMU",
+      "AI2D",
+      "MathVista-mini",
+      "TextVQA",
+      "ChartQA",
+      "DocVQA",
+      "HallusionBench",
+      "POPE",
+      "Avg."
+    ],
+    "rows": [
+      {
+        "model": "LLaVA-OV-7B",
+        "scores": [
+          80.8,
+          61.7,
+          48.8,
+          82.0,
+          63.2,
+          77.6,
+          80.0,
+          87.5,
+          47.3,
+          87.5,
+          71.6
+        ]
+      },
+      {
+        "model": "MiniCPM-V2.6",
+        "scores": [
+          78.0,
+          57.5,
+          49.8,
+          82.1,
+          60.6,
+          80.1,
+          79.3,
+          90.5,
+          48.1,
+          87.0,
+          71.3
+        ]
+      },
+      {
+        "model": "Cambrian-8B",
+        "scores": [
+          75.9,
+          57.6,
+          42.7,
+          79.7,
+          49.0,
+          71.7,
+          73.3,
+          77.8,
+          41.6,
+          86.5,
+          65.6
+        ]
+      },
+      {
+        "model": "InternVL2-8B",
+        "scores": [
+          79.4,
+          61.5,
+          51.2,
+          83.8,
+          58.3,
+          77.4,
+          83.3,
+          91.6,
+          45.0,
+          86.4,
+          71.8
+        ]
+      },
+      {
+        "model": "InternVL2.5-8B",
+        "scores": [
+          82.2,
+          62.8,
+          56.0,
+          84.5,
+          64.4,
+          78.2,
+          84.7,
+          92.9,
+          49.3,
+          88.5,
+          74.4
+        ]
+      },
+      {
+        "model": "Qwen2-VL-7B",
+        "scores": [
+          80.5,
+          60.7,
+          54.1,
+          83.0,
+          58.2,
+          84.3,
+          83.0,
+          93.9,
+          42.4,
+          87.3,
+          72.7
+        ]
+      },
+      {
+        "model": "Qwen3-VL-8B",
+        "scores": [
+          74.9,
+          42.9,
+          47.0,
+          46.7,
+          32.8,
+          83.1,
+          83.5,
+          95.8,
+          51.3,
+          88.3,
+          64.6
+        ]
+      },
+      {
+        "model": "SpatialBot-3B",
+        "scores": [
+          58.2,
+          39.1,
+          31.4,
+          56.7,
+          35.0,
+          50.2,
+          48.1,
+          56.3,
+          36.2,
+          81.5,
+          49.3
+        ]
+      },
+      {
+        "model": "SpatialRGPT-7B",
+        "scores": [
+          72.3,
+          52.8,
+          43.5,
+          74.6,
+          49.1,
+          70.5,
+          68.4,
+          78.0,
+          41.0,
+          85.7,
+          63.6
+        ]
+      },
+      {
+        "model": "ManipVQA-7B",
+        "scores": [
+          69.5,
+          50.2,
+          40.3,
+          71.5,
+          46.8,
+          67.0,
+          65.3,
+          75.2,
+          38.8,
+          83.7,
+          60.8
+        ]
+      },
+      {
+        "model": "LEO-7B",
+        "scores": [
+          70.8,
+          51.4,
+          41.7,
+          72.0,
+          47.3,
+          68.8,
+          66.7,
+          76.5,
+          39.5,
+          84.9,
+          62.0
+        ]
+      },
+      {
+        "model": "KnowinRouter (8B)",
+        "scores": [
+          81.9,
+          63.2,
+          57.8,
+          84.3,
+          61.5,
+          83.9,
+          84.2,
+          93.8,
+          47.9,
+          88.3,
+          74.7
+        ]
+      }
+    ]
+  },
+  "embodied": {
+    "source": "Figure 3, native higher-is-better metrics; mixed cross-system protocols",
+    "benchmarks": [
+      "UniEQA",
+      "OpenEQA",
+      "VSI-Bench",
+      "ERQA",
+      "RoboVQA",
+      "Where2Place"
+    ],
+    "scores": [
+      71.6,
+      58.1,
+      64.1,
+      46.5,
+      63.0,
+      65.0
+    ],
+    "reported_mean": 61.4
+  },
+  "ablation": {
+    "source": "Section 4.4/Figure 5, separate frozen protocol; not the Q1 61.4 protocol",
+    "full": 60.2,
+    "variants": [
+      "Without router",
+      "Random routing",
+      "Without knowledge",
+      "Without perception",
+      "Without both",
+      "Heuristic labels",
+      "Joint end-to-end",
+      "Joint expert update"
+    ],
+    "scores": [
+      54.1,
+      52.4,
+      57.9,
+      57.4,
+      55.8,
+      58.3,
+      57.1,
+      56.2
+    ]
+  },
+  "matched_general_delta": {
+    "source": "Section 4.2, matched comparison against the General path",
+    "benchmarks": [
+      "UniEQA",
+      "OpenEQA",
+      "VSI-Bench",
+      "ERQA",
+      "RoboVQA",
+      "Where2Place"
+    ],
+    "deltas": [
+      -3.37,
+      -2.43,
+      2.94,
+      3.75,
+      7.78,
+      2.0
+    ],
+    "reported_mean": 1.78
+  },
+  "evidence_null": {
+    "source": "Section 4.3, nine benchmarks, Knowledge and Tools disabled",
+    "best_fixed": 58.49,
+    "routed": 60.24,
+    "gain": 1.75,
+    "ci95": [
+      1.25,
+      2.26
+    ]
+  }
+}
