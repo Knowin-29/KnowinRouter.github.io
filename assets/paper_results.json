@@ -211,7 +211,7 @@
     ]
   },
   "embodied": {
-    "source": "Figure 3, native higher-is-better metrics; mixed cross-system protocols",
+    "source": "Figure 3 (Q1), figures/fig03_embodied_results.pdf in the supplied manuscript; transcribed bar labels and legend colors. Native higher-is-better metrics; mixed cross-system protocols.",
     "benchmarks": [
       "UniEQA",
       "OpenEQA",
@@ -228,7 +228,132 @@
       63.0,
       65.0
     ],
-    "reported_mean": 61.4
+    "reported_mean": 61.4,
+    "coverage": "All 10 models and 24 labeled bars in Figure 3. The figure shows four models per benchmark; a complete model-by-benchmark matrix was not supplied.",
+    "missing_value": "null means not shown in Figure 3, not zero. Do not average incomplete rows.",
+    "rows": [
+      {
+        "model": "KnowinRouter (8B)",
+        "paper_model": "EKT-Router",
+        "scores": [
+          71.6,
+          58.1,
+          64.1,
+          46.5,
+          63.0,
+          65.0
+        ]
+      },
+      {
+        "model": "Qwen3-VL-8B-Instruct",
+        "paper_model": "Qwen3-VL-8B-Instruct",
+        "scores": [
+          null,
+          null,
+          61.2,
+          42.8,
+          55.3,
+          63.0
+        ]
+      },
+      {
+        "model": "InternVL3.5-14B",
+        "paper_model": "InternVL3.5-14B",
+        "scores": [
+          70.6,
+          null,
+          60.5,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "model": "Pelican1.0-VL-7B",
+        "paper_model": "Pelican1.0-VL-7B",
+        "scores": [
+          70.3,
+          57.2,
+          null,
+          null,
+          62.6,
+          null
+        ]
+      },
+      {
+        "model": "Gemini-2.5-Pro",
+        "paper_model": "Gemini-2.5-Pro",
+        "scores": [
+          60.6,
+          null,
+          null,
+          null,
+          null,
+          49.6
+        ]
+      },
+      {
+        "model": "MiMo-Embodied-7B",
+        "paper_model": "MiMo-Embodied-7B",
+        "scores": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          63.6
+        ]
+      },
+      {
+        "model": "OpenAI o3",
+        "paper_model": "OpenAI o3",
+        "scores": [
+          null,
+          null,
+          57.8,
+          41.5,
+          52.2,
+          null
+        ]
+      },
+      {
+        "model": "Qwen-VL-Max",
+        "paper_model": "Qwen-VL-Max",
+        "scores": [
+          null,
+          52.2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "model": "InternVL3-38B",
+        "paper_model": "InternVL3-38B",
+        "scores": [
+          null,
+          null,
+          null,
+          41.7,
+          null,
+          null
+        ]
+      },
+      {
+        "model": "GPT-4o",
+        "paper_model": "GPT-4o",
+        "scores": [
+          null,
+          51.1,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "source_figure_sha256": "d657c85479dc31f050b6853c73ddff61d36a91a37f4a5f055712b506f790f780"
   },
   "ablation": {
     "source": "Section 4.4/Figure 5, separate frozen protocol; not the Q1 61.4 protocol",
