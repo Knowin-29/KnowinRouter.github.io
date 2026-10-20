@@ -229,131 +229,160 @@
       65.0
     ],
     "reported_mean": 61.4,
-    "coverage": "All 10 models and 24 labeled bars in Figure 3. The figure shows four models per benchmark; a complete model-by-benchmark matrix was not supplied.",
-    "missing_value": "null means not shown in Figure 3, not zero. Do not average incomplete rows.",
-    "rows": [
+    "coverage": "All 24 labeled scores from Figure 3, grouped into six benchmark comparisons with four models each. Only explicitly reported model-benchmark pairs are included.",
+    "source_figure_sha256": "d657c85479dc31f050b6853c73ddff61d36a91a37f4a5f055712b506f790f780",
+    "comparisons": [
       {
-        "model": "KnowinRouter (8B)",
-        "paper_model": "EKT-Router",
-        "scores": [
-          71.6,
-          58.1,
-          64.1,
-          46.5,
-          63.0,
-          65.0
+        "benchmark": "UniEQA",
+        "results": [
+          {
+            "model": "KnowinRouter (8B)",
+            "paper_model": "EKT-Router",
+            "score": 71.6
+          },
+          {
+            "model": "InternVL3.5-14B",
+            "paper_model": "InternVL3.5-14B",
+            "score": 70.6
+          },
+          {
+            "model": "Pelican1.0-VL-7B",
+            "paper_model": "Pelican1.0-VL-7B",
+            "score": 70.3
+          },
+          {
+            "model": "Gemini-2.5-Pro",
+            "paper_model": "Gemini-2.5-Pro",
+            "score": 60.6
+          }
         ]
       },
       {
-        "model": "Qwen3-VL-8B-Instruct",
-        "paper_model": "Qwen3-VL-8B-Instruct",
-        "scores": [
-          null,
-          null,
-          61.2,
-          42.8,
-          55.3,
-          63.0
+        "benchmark": "OpenEQA",
+        "results": [
+          {
+            "model": "KnowinRouter (8B)",
+            "paper_model": "EKT-Router",
+            "score": 58.1
+          },
+          {
+            "model": "Pelican1.0-VL-7B",
+            "paper_model": "Pelican1.0-VL-7B",
+            "score": 57.2
+          },
+          {
+            "model": "Qwen-VL-Max",
+            "paper_model": "Qwen-VL-Max",
+            "score": 52.2
+          },
+          {
+            "model": "GPT-4o",
+            "paper_model": "GPT-4o",
+            "score": 51.1
+          }
         ]
       },
       {
-        "model": "InternVL3.5-14B",
-        "paper_model": "InternVL3.5-14B",
-        "scores": [
-          70.6,
-          null,
-          60.5,
-          null,
-          null,
-          null
+        "benchmark": "VSI-Bench",
+        "results": [
+          {
+            "model": "KnowinRouter (8B)",
+            "paper_model": "EKT-Router",
+            "score": 64.1
+          },
+          {
+            "model": "Qwen3-VL-8B-Instruct",
+            "paper_model": "Qwen3-VL-8B-Instruct",
+            "score": 61.2
+          },
+          {
+            "model": "InternVL3.5-14B",
+            "paper_model": "InternVL3.5-14B",
+            "score": 60.5
+          },
+          {
+            "model": "OpenAI o3",
+            "paper_model": "OpenAI o3",
+            "score": 57.8
+          }
         ]
       },
       {
-        "model": "Pelican1.0-VL-7B",
-        "paper_model": "Pelican1.0-VL-7B",
-        "scores": [
-          70.3,
-          57.2,
-          null,
-          null,
-          62.6,
-          null
+        "benchmark": "ERQA",
+        "results": [
+          {
+            "model": "KnowinRouter (8B)",
+            "paper_model": "EKT-Router",
+            "score": 46.5
+          },
+          {
+            "model": "Qwen3-VL-8B-Instruct",
+            "paper_model": "Qwen3-VL-8B-Instruct",
+            "score": 42.8
+          },
+          {
+            "model": "InternVL3-38B",
+            "paper_model": "InternVL3-38B",
+            "score": 41.7
+          },
+          {
+            "model": "OpenAI o3",
+            "paper_model": "OpenAI o3",
+            "score": 41.5
+          }
         ]
       },
       {
-        "model": "Gemini-2.5-Pro",
-        "paper_model": "Gemini-2.5-Pro",
-        "scores": [
-          60.6,
-          null,
-          null,
-          null,
-          null,
-          49.6
+        "benchmark": "RoboVQA",
+        "results": [
+          {
+            "model": "KnowinRouter (8B)",
+            "paper_model": "EKT-Router",
+            "score": 63.0
+          },
+          {
+            "model": "Pelican1.0-VL-7B",
+            "paper_model": "Pelican1.0-VL-7B",
+            "score": 62.6
+          },
+          {
+            "model": "Qwen3-VL-8B-Instruct",
+            "paper_model": "Qwen3-VL-8B-Instruct",
+            "score": 55.3
+          },
+          {
+            "model": "OpenAI o3",
+            "paper_model": "OpenAI o3",
+            "score": 52.2
+          }
         ]
       },
       {
-        "model": "MiMo-Embodied-7B",
-        "paper_model": "MiMo-Embodied-7B",
-        "scores": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          63.6
-        ]
-      },
-      {
-        "model": "OpenAI o3",
-        "paper_model": "OpenAI o3",
-        "scores": [
-          null,
-          null,
-          57.8,
-          41.5,
-          52.2,
-          null
-        ]
-      },
-      {
-        "model": "Qwen-VL-Max",
-        "paper_model": "Qwen-VL-Max",
-        "scores": [
-          null,
-          52.2,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "model": "InternVL3-38B",
-        "paper_model": "InternVL3-38B",
-        "scores": [
-          null,
-          null,
-          null,
-          41.7,
-          null,
-          null
-        ]
-      },
-      {
-        "model": "GPT-4o",
-        "paper_model": "GPT-4o",
-        "scores": [
-          null,
-          51.1,
-          null,
-          null,
-          null,
-          null
+        "benchmark": "Where2Place",
+        "results": [
+          {
+            "model": "KnowinRouter (8B)",
+            "paper_model": "EKT-Router",
+            "score": 65.0
+          },
+          {
+            "model": "MiMo-Embodied-7B",
+            "paper_model": "MiMo-Embodied-7B",
+            "score": 63.6
+          },
+          {
+            "model": "Qwen3-VL-8B-Instruct",
+            "paper_model": "Qwen3-VL-8B-Instruct",
+            "score": 63.0
+          },
+          {
+            "model": "Gemini-2.5-Pro",
+            "paper_model": "Gemini-2.5-Pro",
+            "score": 49.6
+          }
         ]
       }
-    ],
-    "source_figure_sha256": "d657c85479dc31f050b6853c73ddff61d36a91a37f4a5f055712b506f790f780"
+    ]
   },
   "ablation": {
     "source": "Section 4.4/Figure 5, separate frozen protocol; not the Q1 61.4 protocol",

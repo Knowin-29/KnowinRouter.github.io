@@ -12,8 +12,9 @@ Pages workflow after a push to `main`.
   tabs, synthetic step-through illustration and citation copy.
 - `assets/paper_results.json`, `assets/plot_results.py`: transcribed paper values
   and editable Matplotlib charts. They are not raw experiment measurements.
-  The embodied QA table includes every model and labeled score in Figure 3;
-  absent cells are `null` in JSON and an em dash on the page, never inferred scores.
+  The six embodied QA tables reproduce every labeled score in Figure 3, with
+  four models per benchmark. JSON `embodied.comparisons` contains those 24 explicit
+  model-benchmark pairs; no unreported scores are inferred.
 - `assets/*.png`: rendered figures from the supplied manuscript. Original figure
   authoring files were not supplied; these images are not editable reconstructions.
 - `assets/KnowinRouter.pdf`, `assets/KnowinRouter_LaTeX.zip`: public preprint and source.
